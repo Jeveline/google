@@ -45,10 +45,6 @@ p {
     border: 1px solid rgb(190, 190, 190);
     border-radius: 4px;
 }
-.search:active {
-    border: 1px solid #4285F4;
-    border-radius: 4px;
-}
 .searchbar {
     margin-left: 510px;
     display: flex;
@@ -76,10 +72,9 @@ nav {
     border-right: none;
     font-family: "Roboto", sans-serif;
     width: 1555px;
-    height: 35px;
+    height: 40px;
+    margin-left: -15px;
     line-height: 40px;
-    margin-left: -27px;
-    margin-right: -27px;
     display: block;
     position: fixed;
     z-index: 104;
@@ -87,14 +82,17 @@ nav {
     min-width: 980px;
 }
 .links {
-    margin-left: 45px;
+    padding-left: 27px;
     color: rgb(119, 119, 119);
     text-align: center;
     float: left;
 }
+.links:active {
+    color: #DB4437;
+}
 .links2 {
+    margin-right: 45px;
     float: right;
-    margin-right: 30px;
 }
 .linkstop {
     margin-top: 0px;
@@ -120,7 +118,7 @@ a:hover {
     padding-left: 30px;
     padding-right: 30px;
 }
-.button {
+.w3-button {
     border: 1px solid #4285F4;
     border-radius: 2px;
     background-color: #4285F4;
@@ -135,8 +133,10 @@ a:hover {
     margin-left: 20px;
     margin-top: -10px;
 }
-.button:hover {
-    background-color: #4285F4;
-    background-image: linear-gradient(top, #4387fd, #4683ea);
-    border: 1px solid #4285F4;
+.w3-button:active {
+    background: #4285F4;
+    background: linear-gradient(180deg, #3068c9 0%, #4683ea 100%);
+}
+.w3-button:hover {
+    text-decoration: none;
 }
